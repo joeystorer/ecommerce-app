@@ -25,39 +25,39 @@ const ProductScreen = ({ match }) => {
         </Col>
         <Col md={3}>
           <ListGroup varian="flush">
-            <ListGroup.Item>
+            <ListGroupItem>
               <h3>{product.name}</h3>
-            </ListGroup.Item>
-            <ListGroup.Item>
+            </ListGroupItem>
+            <ListGroupItem>
               <Rating
                 value={product.rating}
                 text={`${product.numReviews} reviews`}
               />
-            </ListGroup.Item>
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-            <ListGroup.Item>Description: {product.description}</ListGroup.Item>
+            </ListGroupItem>
+            <ListGroupItem>Price: ${product.price}</ListGroupItem>
+            <ListGroupItem>Description: {product.description}</ListGroupItem>
           </ListGroup>
         </Col>
         <Col md={3}>
           <Card>
             <ListGroup variant="flush">
-              <ListGroup.Item>
+              <ListGroupItem>
                 <Row>
                   <Col>Price:</Col>
                   <Col>
                     <strong>${product.price}</strong>
                   </Col>
                 </Row>
-              </ListGroup.Item>
-              <ListGroup.Item>
+              </ListGroupItem>
+              <ListGroupItem>
                 <Row>
                   <Col>Status:</Col>
                   <Col>
                     {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
                   </Col>
                 </Row>
-              </ListGroup.Item>
-              <ListGroup.Item>
+              </ListGroupItem>
+              <ListGroupItem>
                 <Button
                   className="btn-block"
                   typ="button"
@@ -65,7 +65,7 @@ const ProductScreen = ({ match }) => {
                 >
                   add to cart
                 </Button>
-              </ListGroup.Item>
+              </ListGroupItem>
             </ListGroup>
           </Card>
         </Col>
