@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "MERN ecommerce app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server",
+    "server": "nodemon index.js --ignore client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeystorer/ecommerce-app.git"
+  },
+  "author": "Joey Storer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeystorer/ecommerce-app/issues"
+  },
+  "homepage": "https://github.com/joeystorer/ecommerce-app#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
